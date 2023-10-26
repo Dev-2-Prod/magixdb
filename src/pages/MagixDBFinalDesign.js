@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -1957,7 +1957,9 @@ const MagixDbFinalDesignRoot = styled.div`
 
 const MagixDBFinalDesign = () => {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    document.body.style.zoom = "80%";
+  }, []);
   const onButtonContainerClick = useCallback(() => {
     const anchor = document.querySelector(
       "[data-scroll-to='divelementorWidgetWrapContainer1']"
@@ -2022,530 +2024,530 @@ const MagixDBFinalDesign = () => {
               <Button onClick={onButtonContainerClick}>
                 <TryNow>Try Now</TryNow>
               </Button>
-              <AnalyticsPlatformHeroImageIcon autoPlay="autoPlay" source src="SQLite.mp4" type="video/mp4"
+              <AnalyticsPlatformHeroImageIcon autoPlay="autoPlay" source src="SQLite.mp4" type="video/mp4" loop
               >
-                <source src="SQLite.mp4" type="video/mp4"/>
+                <source src="SQLite.mp4" type="video/mp4" />
               </AnalyticsPlatformHeroImageIcon>
-             
-                </DivelementorWidgetWrap>
-                <Section>
-                  <DivelementorWidgetWrap1>
-                    <AnalyticsPlatformOrganizeImIcon
+
+            </DivelementorWidgetWrap>
+            <Section>
+              <DivelementorWidgetWrap1>
+                <AnalyticsPlatformOrganizeImIcon
+                  alt=""
+                  src="/analyticsplatformorganizeimagewebp@2x.png"
+                />
+              </DivelementorWidgetWrap1>
+              <DivelementorWidgetWrap2>
+                <Heading2>
+                  <TalkWithYour>
+                    Talk with your databases in English
+                  </TalkWithYour>
+                </Heading2>
+                <P1>
+                  <FireYourQueryContainer>
+                    <QueryYourDatabaseContainer1>
+                      <WeProvideSupport>{`Fire your query in plain English instead of database query language. `}</WeProvideSupport>
+                      <WeProvideSupport>
+                        {" "}
+                        Let our AI do all the magic
+                      </WeProvideSupport>
+                    </QueryYourDatabaseContainer1>
+                  </FireYourQueryContainer>
+                </P1>
+                <SpanelementorDividerSeparat />
+              </DivelementorWidgetWrap2>
+            </Section>
+            <Section1>
+              <DivelementorWidgetWrap3 data-scroll-to="divelementorWidgetWrapContainer1">
+                <Heading21>
+                  <SettingUpMagixdb>
+                    Setting up MagixDB is simple
+                  </SettingUpMagixdb>
+                </Heading21>
+                <List>
+                  <Item>
+                    <TellUsYour>Tell us your database schema .</TellUsYour>
+                    <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF" />
+                    </svg>
+                    </Div>
+                  </Item>
+                  <Item1>
+                    <StartQueryingYour>
+                      Start querying your database.
+                    </StartQueryingYour>
+                    <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF" />
+                    </svg>
+                    </Div>
+                  </Item1>
+                  <Item2>
+                    <TellUsYour>
+                      Update the form only when Database Schema changes
+                    </TellUsYour>
+                    <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF" />
+                    </svg>
+                    </Div>
+                  </Item2>
+                </List>
+                <Button1>
+                  <TryNow>Get Started</TryNow>
+                </Button1>
+              </DivelementorWidgetWrap3>
+              <DivelementorWidgetWrap4>
+                <Section2>
+                  <Heading22>1</Heading22>
+                  <DivbdtEpAdvancedIconBoxC>
+                    <Heading4>Fill Form</Heading4>
+                    <FillTheForm>
+                      Fill the form for providing information regarding your
+                      database.
+                    </FillTheForm>
+                  </DivbdtEpAdvancedIconBoxC>
+                </Section2>
+                <Section3>
+                  <Heading23>2</Heading23>
+                  <DivbdtEpAdvancedIconBoxC1>
+                    <Heading4>Make Payment</Heading4>
+                    <SelectYourPlan>
+                      Select your plan and make payment
+                    </SelectYourPlan>
+                  </DivbdtEpAdvancedIconBoxC1>
+                </Section3>
+                <Section4>
+                  <Heading24>3</Heading24>
+                  <DivbdtEpAdvancedIconBoxC1>
+                    <Heading4>Recieve API</Heading4>
+                    <ReceiveYourApi>
+                      Receive your API on platform and E-mail
+                    </ReceiveYourApi>
+                  </DivbdtEpAdvancedIconBoxC1>
+                </Section4>
+                <Section5>
+                  <Heading23>4</Heading23>
+                  <DivbdtEpAdvancedIconBoxC1>
+                    <Heading4>Start Quering</Heading4>
+                    <SelectYourPlan>
+                      Talk with your database in plain English.
+                    </SelectYourPlan>
+                  </DivbdtEpAdvancedIconBoxC1>
+                </Section5>
+              </DivelementorWidgetWrap4>
+            </Section1>
+            <DivelementorSection>
+              <SectionParent>
+                <Section6>
+                  <DivelementorWidgetWrap5>
+                    <Heading3>Standard</Heading3>
+                    <Heading31>$59</Heading31>
+                    <Database>1 Database</Database>
+                    <List1>
+                      <Item3>
+                        <DatabaseQueringOf>
+                          1 database quering of your choice
+                        </DatabaseQueringOf>
+                        <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F" />
+                        </svg>
+                        </Div3>
+                      </Item3>
+                      <Item4>
+                        <UnlimitedQuerying>
+                          Unlimited Querying
+                        </UnlimitedQuerying>
+                        <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F" />
+                        </svg>
+                        </Div3>
+                      </Item4>
+                      <Item5>
+                        <UnlimitedSupport>Unlimited Support</UnlimitedSupport>
+                        <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F" />
+                        </svg>
+                        </Div3>
+                      </Item5>
+                      <Item6>
+                        <DaysFreeTrial>15 Days Free Trial</DaysFreeTrial>
+                        <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.5 2.48438C4.81445 2.48438 1.85938 5.47266 1.85938 9.125C1.85938 12.8105 4.81445 15.7656 8.5 15.7656C12.1523 15.7656 15.1406 12.8105 15.1406 9.125C15.1406 5.47266 12.1523 2.48438 8.5 2.48438ZM8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625ZM8.5 6.46875C9.96094 6.46875 11.1562 7.66406 11.1562 9.125C11.1562 10.6191 9.96094 11.7812 8.5 11.7812C7.00586 11.7812 5.84375 10.6191 5.84375 9.125C5.84375 7.66406 7.00586 6.46875 8.5 6.46875Z" fill="#2F2F2F" />
+                        </svg>
+                        </Div3>
+                      </Item6>
+                      <Item7>
+                        <UnlimitedUser>Unlimited user</UnlimitedUser>
+                        <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.5 2.48438C4.81445 2.48438 1.85938 5.47266 1.85938 9.125C1.85938 12.8105 4.81445 15.7656 8.5 15.7656C12.1523 15.7656 15.1406 12.8105 15.1406 9.125C15.1406 5.47266 12.1523 2.48438 8.5 2.48438ZM8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625ZM8.5 6.46875C9.96094 6.46875 11.1562 7.66406 11.1562 9.125C11.1562 10.6191 9.96094 11.7812 8.5 11.7812C7.00586 11.7812 5.84375 10.6191 5.84375 9.125C5.84375 7.66406 7.00586 6.46875 8.5 6.46875Z" fill="#2F2F2F" />
+                        </svg>
+                        </Div3>
+                      </Item7>
+                      <Item8 />
+                    </List1>
+                    <Button2>
+                      <ChoosePlan>Choose plan</ChoosePlan>
+                    </Button2>
+                  </DivelementorWidgetWrap5>
+                </Section6>
+                <DivelementorWidgetWrap6 data-scroll-to="divelementorWidgetWrapContainer">
+                  <Heading32>Advanced</Heading32>
+                  <Heading33>$89</Heading33>
+                  <Database1>2 Database</Database1>
+                  <List2>
+                    <Item9>
+                      <DatabasesOfYour>
+                        2 Databases of your Choice
+                      </DatabasesOfYour>
+                      <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white" />
+                      </svg>
+                      </Div3>
+                    </Item9>
+                    <Item10>
+                      <UnlimitedQuerying1>
+                        Unlimited Querying
+                      </UnlimitedQuerying1>
+                      <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white" />
+                      </svg>
+                      </Div3>
+                    </Item10>
+                    <Item11>
+                      <UnlimitedSupport>Unlimited Support</UnlimitedSupport>
+                      <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white" />
+                      </svg>
+                      </Div3>
+                    </Item11>
+                    <Item12>
+                      <DaysFreeTrial1>15 Days Free Trial</DaysFreeTrial1>
+                      <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 1.87402C4.81445 1.87402 1.85938 4.8623 1.85938 8.51465C1.85938 12.2002 4.81445 15.1553 8.5 15.1553C12.1523 15.1553 15.1406 12.2002 15.1406 8.51465C15.1406 4.8623 12.1523 1.87402 8.5 1.87402ZM8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273ZM8.5 5.8584C9.96094 5.8584 11.1562 7.05371 11.1562 8.51465C11.1562 10.0088 9.96094 11.1709 8.5 11.1709C7.00586 11.1709 5.84375 10.0088 5.84375 8.51465C5.84375 7.05371 7.00586 5.8584 8.5 5.8584Z" fill="white" />
+                      </svg>
+                      </Div3>
+                    </Item12>
+                    <Item7>
+                      <UnlimitedUser1>Unlimited user</UnlimitedUser1>
+                      <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 1.87402C4.81445 1.87402 1.85938 4.8623 1.85938 8.51465C1.85938 12.2002 4.81445 15.1553 8.5 15.1553C12.1523 15.1553 15.1406 12.2002 15.1406 8.51465C15.1406 4.8623 12.1523 1.87402 8.5 1.87402ZM8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273ZM8.5 5.8584C9.96094 5.8584 11.1562 7.05371 11.1562 8.51465C11.1562 10.0088 9.96094 11.1709 8.5 11.1709C7.00586 11.1709 5.84375 10.0088 5.84375 8.51465C5.84375 7.05371 7.00586 5.8584 8.5 5.8584Z" fill="white" />
+                      </svg>
+                      </Div3>
+                    </Item7>
+                    <Item8 />
+                  </List2>
+                  <Button3>
+                    <ChoosePlan>Choose plan</ChoosePlan>
+                  </Button3>
+                </DivelementorWidgetWrap6>
+              </SectionParent>
+            </DivelementorSection>
+            <DivelementorSection1>
+              <DivelementorWidgetWrap7>
+                <Heading26>Frequently asked questions</Heading26>
+                <P2>
+                  <WhetherYoureLookingContainer>
+                    <QueryYourDatabaseContainer1>
+                      <WeProvideSupport>
+                        Whether you’re looking to improve your marketing
+                        strategy or
+                      </WeProvideSupport>
+                      <WeProvideSupport>
+                        optimize your operations, our platform has you covered.
+                      </WeProvideSupport>
+                    </QueryYourDatabaseContainer1>
+                  </WhetherYoureLookingContainer>
+                </P2>
+                <DivelementorContainer>
+                  <DivbdtEpAccordion241177b>
+                    <Heading>
+                      <WhatKindOf>
+                        What kind of data can I visualize with this platform?
+                      </WhatKindOf>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading>
+                    <Heading5>
+                      <IsItEasy>Is it easy to use?</IsItEasy>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading5>
+                    <Heading6>
+                      <CanIGet>Can I get real-time insights?</CanIGet>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading6>
+                    <Heading7>
+                      <WhichDatabasesDoes>
+                        Which databases does MagixDB supports?
+                      </WhichDatabasesDoes>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading7>
+                  </DivbdtEpAccordion241177b>
+                  <DivbdtEpAccordion19c020e>
+                    <Heading>
+                      <WhatHappensWhen>
+                        What happens when a new data is added to my DB?
+                      </WhatHappensWhen>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading>
+                    <Heading5>
+                      <WhatKindOf1>
+                        What kind of visualizations are available?
+                      </WhatKindOf1>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading5>
+                    <Heading6>
+                      <CanICollaborate>
+                        Can I collaborate with my team on this platform?
+                      </CanICollaborate>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading6>
+                    <Heading7>
+                      <WhatIsThe>What is the cost of this platform?</WhatIsThe>
+                      <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F" />
+                      </svg>
+                      </Div13>
+                    </Heading7>
+                  </DivbdtEpAccordion19c020e>
+                </DivelementorContainer>
+              </DivelementorWidgetWrap7>
+            </DivelementorSection1>
+            <DivelementorSection2>
+              <DivelementorWidgetWrap8>
+                <DivelementorContainer1>
+                  <Logo1webpIcon alt="" src="/logo1webp@2x.png" />
+                  <Logo4webpIcon alt="" src="/logo4webp@2x.png" />
+                  <Logo3webpIcon alt="" src="/logo3webp@2x.png" />
+                  <Logo2webpIcon alt="" src="/logo2webp@2x.png" />
+                </DivelementorContainer1>
+                <Section7>
+                  <DivelementorContainer2>
+                    <Heading27>
+                      <PoweredByMost>
+                        Powered by most advanced Generative AI technologies
+                      </PoweredByMost>
+                    </Heading27>
+                    <DivelementorWidgetWrap9>
+                      <DivelementorWidgetContainer>
+                        <DivbdtEpAdvancedCounterCo>
+                          <B>100+</B>
+                          <ActiveUsers>Active Users</ActiveUsers>
+                        </DivbdtEpAdvancedCounterCo>
+                      </DivelementorWidgetContainer>
+                    </DivelementorWidgetWrap9>
+                  </DivelementorContainer2>
+                </Section7>
+              </DivelementorWidgetWrap8>
+            </DivelementorSection2>
+            <Section8>
+              <DivelementorWidgetWrap10>
+                <Heading28>
+                  <ExploreOurCuttingEdge>
+                    Explore our cutting-edge API today and elevate your data
+                    experience.
+                  </ExploreOurCuttingEdge>
+                </Heading28>
+                <P3>
+                  <ProvideYourEmail>
+                    Provide your email address to receive a link to access the
+                    API subscription form.
+                  </ProvideYourEmail>
+                </P3>
+                <DivelementorWidgetContainer1>
+                  <Form>
+                    <Input>
+                      <EnterYourMail>Enter your mail address</EnterYourMail>
+                    </Input>
+                    <Button4>
+                      <TryNow>Get Free Trial</TryNow>
+                    </Button4>
+                  </Form>
+                </DivelementorWidgetContainer1>
+              </DivelementorWidgetWrap10>
+            </Section8>
+            <DivelementorWidgetWrapWrapper data-scroll-to="frameContainer">
+              <DivelementorWidgetWrap11>
+                <Heading29>What makes us different</Heading29>
+                <P4>
+                  <WithMagixdbApi>
+                    With "MagixDB API", you bring simplicity, efficiency, and
+                    ease to your operations, empowering you to compete
+                    confidently in today's data-driven world.
+                  </WithMagixdbApi>
+                </P4>
+                <Section9>
+                  <DivbdtEpAdvancedIconBox>
+                    <SpanbdtEpAdvancedIconBox
                       alt=""
-                      src="/analyticsplatformorganizeimagewebp@2x.png"
+                      src="/spanbdtepadvancediconboxiconwrap.svg"
                     />
-                  </DivelementorWidgetWrap1>
-                  <DivelementorWidgetWrap2>
-                    <Heading2>
-                      <TalkWithYour>
-                        Talk with your databases in English
-                      </TalkWithYour>
-                    </Heading2>
-                    <P1>
-                      <FireYourQueryContainer>
-                        <QueryYourDatabaseContainer1>
-                          <WeProvideSupport>{`Fire your query in plain English instead of database query language. `}</WeProvideSupport>
-                          <WeProvideSupport>
-                            {" "}
-                            Let our AI do all the magic
-                          </WeProvideSupport>
-                        </QueryYourDatabaseContainer1>
-                      </FireYourQueryContainer>
-                    </P1>
-                    <SpanelementorDividerSeparat />
-                  </DivelementorWidgetWrap2>
-                </Section>
-                <Section1>
-                  <DivelementorWidgetWrap3 data-scroll-to="divelementorWidgetWrapContainer1">
-                    <Heading21>
-                      <SettingUpMagixdb>
-                        Setting up MagixDB is simple
-                      </SettingUpMagixdb>
-                    </Heading21>
-                    <List>
-                      <Item>
-                        <TellUsYour>Tell us your database schema .</TellUsYour>
-                        <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF"/>
-</svg>
-</Div>
-                      </Item>
-                      <Item1>
-                        <StartQueryingYour>
-                          Start querying your database.
-                        </StartQueryingYour>
-                        <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF"/>
-</svg>
-</Div>
-                      </Item1>
-                      <Item2>
-                        <TellUsYour>
-                          Update the form only when Database Schema changes
-                        </TellUsYour>
-                        <Div><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 0.46875C10.7461 0.46875 13.7812 3.50391 13.7812 7.25C13.7812 10.9961 10.7461 14.0312 7 14.0312C3.25391 14.0312 0.21875 10.9961 0.21875 7.25C0.21875 3.50391 3.25391 0.46875 7 0.46875Z" fill="#3866FF"/>
-</svg>
-</Div>
-                      </Item2>
-                    </List>
-                    <Button1>
-                      <TryNow>Get Started</TryNow>
-                    </Button1>
-                  </DivelementorWidgetWrap3>
-                  <DivelementorWidgetWrap4>
-                    <Section2>
-                      <Heading22>1</Heading22>
-                      <DivbdtEpAdvancedIconBoxC>
-                        <Heading4>Fill Form</Heading4>
-                        <FillTheForm>
-                          Fill the form for providing information regarding your
-                          database.
-                        </FillTheForm>
-                      </DivbdtEpAdvancedIconBoxC>
-                    </Section2>
-                    <Section3>
-                      <Heading23>2</Heading23>
-                      <DivbdtEpAdvancedIconBoxC1>
-                        <Heading4>Make Payment</Heading4>
-                        <SelectYourPlan>
-                          Select your plan and make payment
-                        </SelectYourPlan>
-                      </DivbdtEpAdvancedIconBoxC1>
-                    </Section3>
-                    <Section4>
-                      <Heading24>3</Heading24>
-                      <DivbdtEpAdvancedIconBoxC1>
-                        <Heading4>Recieve API</Heading4>
-                        <ReceiveYourApi>
-                          Receive your API on platform and E-mail
-                        </ReceiveYourApi>
-                      </DivbdtEpAdvancedIconBoxC1>
-                    </Section4>
-                    <Section5>
-                      <Heading23>4</Heading23>
-                      <DivbdtEpAdvancedIconBoxC1>
-                        <Heading4>Start Quering</Heading4>
-                        <SelectYourPlan>
-                          Talk with your database in plain English.
-                        </SelectYourPlan>
-                      </DivbdtEpAdvancedIconBoxC1>
-                    </Section5>
-                  </DivelementorWidgetWrap4>
-                </Section1>
-                <DivelementorSection>
-                  <SectionParent>
-                    <Section6>
-                      <DivelementorWidgetWrap5>
-                        <Heading3>Standard</Heading3>
-                        <Heading31>$59</Heading31>
-                        <Database>1 Database</Database>
-                        <List1>
-                          <Item3>
-                            <DatabaseQueringOf>
-                              1 database quering of your choice
-                            </DatabaseQueringOf>
-                            <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F"/>
-</svg>
-</Div3>
-                          </Item3>
-                          <Item4>
-                            <UnlimitedQuerying>
-                              Unlimited Querying
-                            </UnlimitedQuerying>
-                            <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F"/>
-</svg>
-</Div3>
-                          </Item4>
-                          <Item5>
-                            <UnlimitedSupport>Unlimited Support</UnlimitedSupport>
-                            <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125ZM7.53711 13.5078L13.6465 7.39844C13.8457 7.19922 13.8457 6.83398 13.6465 6.63477L12.8828 5.9043C12.6836 5.67188 12.3516 5.67188 12.1523 5.9043L7.17188 10.8848L4.81445 8.56055C4.61523 8.32812 4.2832 8.32812 4.08398 8.56055L3.32031 9.29102C3.12109 9.49023 3.12109 9.85547 3.32031 10.0547L6.77344 13.5078C6.97266 13.707 7.33789 13.707 7.53711 13.5078Z" fill="#2F2F2F"/>
-</svg>
-</Div3>
-                          </Item5>
-                          <Item6>
-                            <DaysFreeTrial>15 Days Free Trial</DaysFreeTrial>
-                            <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.5 2.48438C4.81445 2.48438 1.85938 5.47266 1.85938 9.125C1.85938 12.8105 4.81445 15.7656 8.5 15.7656C12.1523 15.7656 15.1406 12.8105 15.1406 9.125C15.1406 5.47266 12.1523 2.48438 8.5 2.48438ZM8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625ZM8.5 6.46875C9.96094 6.46875 11.1562 7.66406 11.1562 9.125C11.1562 10.6191 9.96094 11.7812 8.5 11.7812C7.00586 11.7812 5.84375 10.6191 5.84375 9.125C5.84375 7.66406 7.00586 6.46875 8.5 6.46875Z" fill="#2F2F2F"/>
-</svg>
-</Div3>
-                          </Item6>
-                          <Item7>
-                            <UnlimitedUser>Unlimited user</UnlimitedUser>
-                            <Div3><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.5 2.48438C4.81445 2.48438 1.85938 5.47266 1.85938 9.125C1.85938 12.8105 4.81445 15.7656 8.5 15.7656C12.1523 15.7656 15.1406 12.8105 15.1406 9.125C15.1406 5.47266 12.1523 2.48438 8.5 2.48438ZM8.5 0.890625C13.0156 0.890625 16.7344 4.60938 16.7344 9.125C16.7344 13.6738 13.0156 17.3594 8.5 17.3594C3.95117 17.3594 0.265625 13.6738 0.265625 9.125C0.265625 4.60938 3.95117 0.890625 8.5 0.890625ZM8.5 6.46875C9.96094 6.46875 11.1562 7.66406 11.1562 9.125C11.1562 10.6191 9.96094 11.7812 8.5 11.7812C7.00586 11.7812 5.84375 10.6191 5.84375 9.125C5.84375 7.66406 7.00586 6.46875 8.5 6.46875Z" fill="#2F2F2F"/>
-</svg>
-</Div3>
-                          </Item7>
-                          <Item8 />
-                        </List1>
-                        <Button2>
-                          <ChoosePlan>Choose plan</ChoosePlan>
-                        </Button2>
-                      </DivelementorWidgetWrap5>
-                    </Section6>
-                    <DivelementorWidgetWrap6 data-scroll-to="divelementorWidgetWrapContainer">
-                      <Heading32>Advanced</Heading32>
-                      <Heading33>$89</Heading33>
-                      <Database1>2 Database</Database1>
-                      <List2>
-                        <Item9>
-                          <DatabasesOfYour>
-                            2 Databases of your Choice
-                          </DatabasesOfYour>
-                          <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white"/>
-</svg>
-</Div3>
-                        </Item9>
-                        <Item10>
-                          <UnlimitedQuerying1>
-                            Unlimited Querying
-                          </UnlimitedQuerying1>
-                          <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white"/>
-</svg>
-</Div3>
-                        </Item10>
-                        <Item11>
-                          <UnlimitedSupport>Unlimited Support</UnlimitedSupport>
-                          <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465ZM7.53711 12.8975L13.6465 6.78809C13.8457 6.58887 13.8457 6.22363 13.6465 6.02441L12.8828 5.29395C12.6836 5.06152 12.3516 5.06152 12.1523 5.29395L7.17188 10.2744L4.81445 7.9502C4.61523 7.71777 4.2832 7.71777 4.08398 7.9502L3.32031 8.68066C3.12109 8.87988 3.12109 9.24512 3.32031 9.44434L6.77344 12.8975C6.97266 13.0967 7.33789 13.0967 7.53711 12.8975Z" fill="white"/>
-</svg>
-</Div3>
-                        </Item11>
-                        <Item12>
-                          <DaysFreeTrial1>15 Days Free Trial</DaysFreeTrial1>
-                          <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.5 1.87402C4.81445 1.87402 1.85938 4.8623 1.85938 8.51465C1.85938 12.2002 4.81445 15.1553 8.5 15.1553C12.1523 15.1553 15.1406 12.2002 15.1406 8.51465C15.1406 4.8623 12.1523 1.87402 8.5 1.87402ZM8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273ZM8.5 5.8584C9.96094 5.8584 11.1562 7.05371 11.1562 8.51465C11.1562 10.0088 9.96094 11.1709 8.5 11.1709C7.00586 11.1709 5.84375 10.0088 5.84375 8.51465C5.84375 7.05371 7.00586 5.8584 8.5 5.8584Z" fill="white"/>
-</svg>
-</Div3>
-                        </Item12>
-                        <Item7>
-                          <UnlimitedUser1>Unlimited user</UnlimitedUser1>
-                          <Div3><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.5 1.87402C4.81445 1.87402 1.85938 4.8623 1.85938 8.51465C1.85938 12.2002 4.81445 15.1553 8.5 15.1553C12.1523 15.1553 15.1406 12.2002 15.1406 8.51465C15.1406 4.8623 12.1523 1.87402 8.5 1.87402ZM8.5 0.280273C13.0156 0.280273 16.7344 3.99902 16.7344 8.51465C16.7344 13.0635 13.0156 16.749 8.5 16.749C3.95117 16.749 0.265625 13.0635 0.265625 8.51465C0.265625 3.99902 3.95117 0.280273 8.5 0.280273ZM8.5 5.8584C9.96094 5.8584 11.1562 7.05371 11.1562 8.51465C11.1562 10.0088 9.96094 11.1709 8.5 11.1709C7.00586 11.1709 5.84375 10.0088 5.84375 8.51465C5.84375 7.05371 7.00586 5.8584 8.5 5.8584Z" fill="white"/>
-</svg>
-</Div3>
-                        </Item7>
-                        <Item8 />
-                      </List2>
-                      <Button3>
-                        <ChoosePlan>Choose plan</ChoosePlan>
-                      </Button3>
-                    </DivelementorWidgetWrap6>
-                  </SectionParent>
-                </DivelementorSection>
-                <DivelementorSection1>
-                  <DivelementorWidgetWrap7>
-                    <Heading26>Frequently asked questions</Heading26>
-                    <P2>
-                      <WhetherYoureLookingContainer>
-                        <QueryYourDatabaseContainer1>
-                          <WeProvideSupport>
-                            Whether you’re looking to improve your marketing
-                            strategy or
-                          </WeProvideSupport>
-                          <WeProvideSupport>
-                            optimize your operations, our platform has you covered.
-                          </WeProvideSupport>
-                        </QueryYourDatabaseContainer1>
-                      </WhetherYoureLookingContainer>
-                    </P2>
-                    <DivelementorContainer>
-                      <DivbdtEpAccordion241177b>
-                        <Heading>
-                          <WhatKindOf>
-                            What kind of data can I visualize with this platform?
-                          </WhatKindOf>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading>
-                        <Heading5>
-                          <IsItEasy>Is it easy to use?</IsItEasy>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading5>
-                        <Heading6>
-                          <CanIGet>Can I get real-time insights?</CanIGet>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading6>
-                        <Heading7>
-                          <WhichDatabasesDoes>
-                            Which databases does MagixDB supports?
-                          </WhichDatabasesDoes>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading7>
-                      </DivbdtEpAccordion241177b>
-                      <DivbdtEpAccordion19c020e>
-                        <Heading>
-                          <WhatHappensWhen>
-                            What happens when a new data is added to my DB?
-                          </WhatHappensWhen>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading>
-                        <Heading5>
-                          <WhatKindOf1>
-                            What kind of visualizations are available?
-                          </WhatKindOf1>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading5>
-                        <Heading6>
-                          <CanICollaborate>
-                            Can I collaborate with my team on this platform?
-                          </CanICollaborate>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading6>
-                        <Heading7>
-                          <WhatIsThe>What is the cost of this platform?</WhatIsThe>
-                          <Div13><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.1 5.88965C13.6312 5.88965 14.1 6.3584 14.1 6.88965V7.88965C14.1 8.45215 13.6312 8.88965 13.1 8.88965H8.6V13.3896C8.6 13.9521 8.13125 14.3896 7.6 14.3896H6.6C6.0375 14.3896 5.6 13.9521 5.6 13.3896V8.88965H1.1C0.5375 8.88965 0.0999999 8.45215 0.0999999 7.88965V6.88965C0.0999999 6.3584 0.5375 5.88965 1.1 5.88965H5.6V1.38965C5.6 0.858398 6.0375 0.389648 6.6 0.389648H7.6C8.13125 0.389648 8.6 0.858398 8.6 1.38965V5.88965H13.1Z" fill="#2F2F2F"/>
-</svg>
-</Div13>
-                        </Heading7>
-                      </DivbdtEpAccordion19c020e>
-                    </DivelementorContainer>
-                  </DivelementorWidgetWrap7>
-                </DivelementorSection1>
-                <DivelementorSection2>
-                  <DivelementorWidgetWrap8>
-                    <DivelementorContainer1>
-                      <Logo1webpIcon alt="" src="/logo1webp@2x.png" />
-                      <Logo4webpIcon alt="" src="/logo4webp@2x.png" />
-                      <Logo3webpIcon alt="" src="/logo3webp@2x.png" />
-                      <Logo2webpIcon alt="" src="/logo2webp@2x.png" />
-                    </DivelementorContainer1>
-                    <Section7>
-                      <DivelementorContainer2>
-                        <Heading27>
-                          <PoweredByMost>
-                            Powered by most advanced Generative AI technologies
-                          </PoweredByMost>
-                        </Heading27>
-                        <DivelementorWidgetWrap9>
-                          <DivelementorWidgetContainer>
-                            <DivbdtEpAdvancedCounterCo>
-                              <B>100+</B>
-                              <ActiveUsers>Active Users</ActiveUsers>
-                            </DivbdtEpAdvancedCounterCo>
-                          </DivelementorWidgetContainer>
-                        </DivelementorWidgetWrap9>
-                      </DivelementorContainer2>
-                    </Section7>
-                  </DivelementorWidgetWrap8>
-                </DivelementorSection2>
-                <Section8>
-                  <DivelementorWidgetWrap10>
-                    <Heading28>
-                      <ExploreOurCuttingEdge>
-                        Explore our cutting-edge API today and elevate your data
-                        experience.
-                      </ExploreOurCuttingEdge>
-                    </Heading28>
-                    <P3>
-                      <ProvideYourEmail>
-                        Provide your email address to receive a link to access the
-                        API subscription form.
-                      </ProvideYourEmail>
-                    </P3>
-                    <DivelementorWidgetContainer1>
-                      <Form>
-                        <Input>
-                          <EnterYourMail>Enter your mail address</EnterYourMail>
-                        </Input>
-                        <Button4>
-                          <TryNow>Get Free Trial</TryNow>
-                        </Button4>
-                      </Form>
-                    </DivelementorWidgetContainer1>
-                  </DivelementorWidgetWrap10>
-                </Section8>
-                <DivelementorWidgetWrapWrapper data-scroll-to="frameContainer">
-                  <DivelementorWidgetWrap11>
-                    <Heading29>What makes us different</Heading29>
-                    <P4>
-                      <WithMagixdbApi>
-                        With "MagixDB API", you bring simplicity, efficiency, and
-                        ease to your operations, empowering you to compete
-                        confidently in today's data-driven world.
-                      </WithMagixdbApi>
-                    </P4>
-                    <Section9>
-                      <DivbdtEpAdvancedIconBox>
-                        <SpanbdtEpAdvancedIconBox
-                          alt=""
-                          src="/spanbdtepadvancediconboxiconwrap.svg"
-                        />
-                        <DivbdtEpAdvancedIconBoxC4>
-                          <Heading44>Visualize results</Heading44>
-                          <P5>
-                            <IdentifyTrendsInContainer>
-                              <QueryYourDatabaseContainer1>
-                                <WeProvideSupport>
-                                  Identify trends in your data
-                                </WeProvideSupport>
-                                <WeProvideSupport>
-                                  to make better decisions.
-                                </WeProvideSupport>
-                              </QueryYourDatabaseContainer1>
-                            </IdentifyTrendsInContainer>
-                          </P5>
-                        </DivbdtEpAdvancedIconBoxC4>
-                      </DivbdtEpAdvancedIconBox>
-                      <DivbdtEpAdvancedIconBox1>
-                        <SpanbdtEpAdvancedIconBox1
-                          alt=""
-                          src="/spanbdtepadvancediconboxiconwrap1.svg"
-                        />
-                        <DivbdtEpAdvancedIconBoxC5>
-                          <Heading45>Enhance database interaction</Heading45>
-                          <P6>
-                            <QueryDynamicallyAnd>
-                              Query dynamically and effortlessly.
-                            </QueryDynamicallyAnd>
-                          </P6>
-                        </DivbdtEpAdvancedIconBoxC5>
-                      </DivbdtEpAdvancedIconBox1>
-                      <DivbdtEpAdvancedIconBox2>
-                        <SpanbdtEpAdvancedIconBox
-                          alt=""
-                          src="/spanbdtepadvancediconboxiconwrap2.svg"
-                        />
-                        <DivbdtEpAdvancedIconBoxC6>
-                          <Heading46>Quick setup</Heading46>
-                          <P5>
-                            <GetStartedIn>
-                              Get started in just 10 minutes
-                            </GetStartedIn>
-                          </P5>
-                        </DivbdtEpAdvancedIconBoxC6>
-                      </DivbdtEpAdvancedIconBox2>
-                      <DivbdtEpAdvancedIconBox3>
-                        <SpanbdtEpAdvancedIconBox1
-                          alt=""
-                          src="/spanbdtepadvancediconboxiconwrap3.svg"
-                        />
-                        <DivbdtEpAdvancedIconBoxC7>
-                          <Heading47>Your data is your own</Heading47>
-                          <P8>
-                            <NoDatabaseIntegration>
-                              No database integration required
-                            </NoDatabaseIntegration>
-                          </P8>
-                        </DivbdtEpAdvancedIconBoxC7>
-                      </DivbdtEpAdvancedIconBox3>
-                    </Section9>
-                  </DivelementorWidgetWrap11>
-                </DivelementorWidgetWrapWrapper>
-              </ArticleMain>
-            </Divprimary>
-            <DivuicoreHeaderWrapper>
-              <Nav>
-                <DivuicoreNavMenu>
-                  <List3>
-                    <ItemLink onClick={onItemLinkClick}>Login</ItemLink>
-                    <ItemLink onClick={onItemLink1Click}>Product</ItemLink>
-                    <ItemLink onClick={onItemLink2Click}>Pricing</ItemLink>
-                    <ItemLink onClick={onItemLink3Click}>About Us</ItemLink>
-                  </List3>
-                  <Button5>
-                    <Spanbar />
-                    <Spanbar1>
-                      <Pseudo />
-                    </Spanbar1>
-                    <Spanbar2 />
-                  </Button5>
-                </DivuicoreNavMenu>
-                <MagixdbParent>
-                  <Magixdb>MagixDB</Magixdb>
-                  <Logo1RemovebgPreview1Icon
-                    alt=""
-                    src="/logo1removebgpreview-1@2x.png"
-                  />
-                </MagixdbParent>
-              </Nav>
-            </DivuicoreHeaderWrapper>
-            <Footer>
-              <DivelementorSection3 data-scroll-to="divelementorSectionContainer">
-                <Section10>
-                  <DivelementorWidgetWrap12>
-                    <Logo1RemovebgPreview1Icon1
+                    <DivbdtEpAdvancedIconBoxC4>
+                      <Heading44>Visualize results</Heading44>
+                      <P5>
+                        <IdentifyTrendsInContainer>
+                          <QueryYourDatabaseContainer1>
+                            <WeProvideSupport>
+                              Identify trends in your data
+                            </WeProvideSupport>
+                            <WeProvideSupport>
+                              to make better decisions.
+                            </WeProvideSupport>
+                          </QueryYourDatabaseContainer1>
+                        </IdentifyTrendsInContainer>
+                      </P5>
+                    </DivbdtEpAdvancedIconBoxC4>
+                  </DivbdtEpAdvancedIconBox>
+                  <DivbdtEpAdvancedIconBox1>
+                    <SpanbdtEpAdvancedIconBox1
                       alt=""
-                      src="/logo1removebgpreview-11@2x.png"
+                      src="/spanbdtepadvancediconboxiconwrap1.svg"
                     />
-                    <Magixdb1>MagixDB</Magixdb1>
-                    <P9>
-                      <EnhanceThePower>
-                        Enhance the power of your Database by Querying it like a
-                        pro!
-                      </EnhanceThePower>
-                    </P9>
-                    <List4>
-                      <ItemLink4>contact@MagixDB.com</ItemLink4>
-                      <ItemLink5>+8801712958789</ItemLink5>
-                    </List4>
-                  </DivelementorWidgetWrap12>
-                  <DivelementorWidgetWrap13>
-                    <Heading48>Our Company</Heading48>
-                    <List5>
-                      <ItemLink6>Home</ItemLink6>
-                      <ItemLink7>Services</ItemLink7>
-                      <ItemLink8>Features</ItemLink8>
-                      <ItemLink9>About Us</ItemLink9>
-                    </List5>
-                  </DivelementorWidgetWrap13>
-                  <DivelementorWidgetWrap14>
-                    <Heading49>Features</Heading49>
-                    <List6>
-                      <ItemLink10>Data Analytics</ItemLink10>
-                      <ItemLink11>User Reporting</ItemLink11>
-                      <ItemLink12>Data Insights</ItemLink12>
-                    </List6>
-                  </DivelementorWidgetWrap14>
-                  <DivelementorWidgetWrap15>
-                    <Heading410>Help</Heading410>
-                    <List7>
-                      <ItemLink13>Help Center</ItemLink13>
-                      <ItemLink14>Information</ItemLink14>
-                      <ItemLink15>FAQ</ItemLink15>
-                      <ItemLink16>Contact</ItemLink16>
-                    </List7>
-                  </DivelementorWidgetWrap15>
-                </Section10>
-                <DivelementorSection4>
-                  <P10>
-                    <Copyright2023>
-                      Copyright: © 2023 MagixDB. All Rights Reserved.
-                    </Copyright2023>
-                  </P10>
-                </DivelementorSection4>
-              </DivelementorSection3>
-            </Footer>
-          </DivuicorePage>
-        </MagixDbFinalDesignRoot>
-        );
+                    <DivbdtEpAdvancedIconBoxC5>
+                      <Heading45>Enhance database interaction</Heading45>
+                      <P6>
+                        <QueryDynamicallyAnd>
+                          Query dynamically and effortlessly.
+                        </QueryDynamicallyAnd>
+                      </P6>
+                    </DivbdtEpAdvancedIconBoxC5>
+                  </DivbdtEpAdvancedIconBox1>
+                  <DivbdtEpAdvancedIconBox2>
+                    <SpanbdtEpAdvancedIconBox
+                      alt=""
+                      src="/spanbdtepadvancediconboxiconwrap2.svg"
+                    />
+                    <DivbdtEpAdvancedIconBoxC6>
+                      <Heading46>Quick setup</Heading46>
+                      <P5>
+                        <GetStartedIn>
+                          Get started in just 10 minutes
+                        </GetStartedIn>
+                      </P5>
+                    </DivbdtEpAdvancedIconBoxC6>
+                  </DivbdtEpAdvancedIconBox2>
+                  <DivbdtEpAdvancedIconBox3>
+                    <SpanbdtEpAdvancedIconBox1
+                      alt=""
+                      src="/spanbdtepadvancediconboxiconwrap3.svg"
+                    />
+                    <DivbdtEpAdvancedIconBoxC7>
+                      <Heading47>Your data is your own</Heading47>
+                      <P8>
+                        <NoDatabaseIntegration>
+                          No database integration required
+                        </NoDatabaseIntegration>
+                      </P8>
+                    </DivbdtEpAdvancedIconBoxC7>
+                  </DivbdtEpAdvancedIconBox3>
+                </Section9>
+              </DivelementorWidgetWrap11>
+            </DivelementorWidgetWrapWrapper>
+          </ArticleMain>
+        </Divprimary>
+        <DivuicoreHeaderWrapper>
+          <Nav>
+            <DivuicoreNavMenu>
+              <List3>
+                <ItemLink onClick={onItemLinkClick}>Login</ItemLink>
+                <ItemLink onClick={onItemLink1Click}>Product</ItemLink>
+                <ItemLink onClick={onItemLink2Click}>Pricing</ItemLink>
+                <ItemLink onClick={onItemLink3Click}>About Us</ItemLink>
+              </List3>
+              <Button5>
+                <Spanbar />
+                <Spanbar1>
+                  <Pseudo />
+                </Spanbar1>
+                <Spanbar2 />
+              </Button5>
+            </DivuicoreNavMenu>
+            <MagixdbParent>
+              <Magixdb>MagixDB</Magixdb>
+              <Logo1RemovebgPreview1Icon
+                alt=""
+                src="/logo1removebgpreview-1@2x.png"
+              />
+            </MagixdbParent>
+          </Nav>
+        </DivuicoreHeaderWrapper>
+        <Footer>
+          <DivelementorSection3 data-scroll-to="divelementorSectionContainer">
+            <Section10>
+              <DivelementorWidgetWrap12>
+                <Logo1RemovebgPreview1Icon1
+                  alt=""
+                  src="/logo1removebgpreview-11@2x.png"
+                />
+                <Magixdb1>MagixDB</Magixdb1>
+                <P9>
+                  <EnhanceThePower>
+                    Enhance the power of your Database by Querying it like a
+                    pro!
+                  </EnhanceThePower>
+                </P9>
+                <List4>
+                  <ItemLink4>contact@MagixDB.com</ItemLink4>
+                  <ItemLink5>+8801712958789</ItemLink5>
+                </List4>
+              </DivelementorWidgetWrap12>
+              <DivelementorWidgetWrap13>
+                <Heading48>Our Company</Heading48>
+                <List5>
+                  <ItemLink6>Home</ItemLink6>
+                  <ItemLink7>Services</ItemLink7>
+                  <ItemLink8>Features</ItemLink8>
+                  <ItemLink9>About Us</ItemLink9>
+                </List5>
+              </DivelementorWidgetWrap13>
+              <DivelementorWidgetWrap14>
+                <Heading49>Features</Heading49>
+                <List6>
+                  <ItemLink10>Data Analytics</ItemLink10>
+                  <ItemLink11>User Reporting</ItemLink11>
+                  <ItemLink12>Data Insights</ItemLink12>
+                </List6>
+              </DivelementorWidgetWrap14>
+              <DivelementorWidgetWrap15>
+                <Heading410>Help</Heading410>
+                <List7>
+                  <ItemLink13>Help Center</ItemLink13>
+                  <ItemLink14>Information</ItemLink14>
+                  <ItemLink15>FAQ</ItemLink15>
+                  <ItemLink16>Contact</ItemLink16>
+                </List7>
+              </DivelementorWidgetWrap15>
+            </Section10>
+            <DivelementorSection4>
+              <P10>
+                <Copyright2023>
+                  Copyright: © 2023 MagixDB. All Rights Reserved.
+                </Copyright2023>
+              </P10>
+            </DivelementorSection4>
+          </DivelementorSection3>
+        </Footer>
+      </DivuicorePage>
+    </MagixDbFinalDesignRoot>
+  );
 };
 
-        export default MagixDBFinalDesign;
+export default MagixDBFinalDesign;
