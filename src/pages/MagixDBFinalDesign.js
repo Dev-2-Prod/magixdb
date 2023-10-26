@@ -2024,7 +2024,7 @@ const MagixDBFinalDesign = () => {
               <Button onClick={onButtonContainerClick}>
                 <TryNow>Try Now</TryNow>
               </Button>
-              <AnalyticsPlatformHeroImageIcon autoPlay="autoPlay" source src="SQLite.mp4" type="video/mp4"
+              <AnalyticsPlatformHeroImageIcon autoPlay="autoPlay" source src="SQLite.mp4" type="video/mp4" muted={true}
               >
                 <source src="SQLite.mp4" type="video/mp4" />
               </AnalyticsPlatformHeroImageIcon>
