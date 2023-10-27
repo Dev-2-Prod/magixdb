@@ -332,7 +332,7 @@ const LogInWithMagixdb = () => {
   const navigate = useNavigate();
 
   const onArrowLeftOutlineIconClick = useCallback(() => {
-    navigate("/magixdb-version1-finalllll-phone");
+    navigate("/");
   }, [navigate]);
 
   return (
