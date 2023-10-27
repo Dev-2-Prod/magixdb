@@ -337,10 +337,7 @@ const LogInWithMagixdb = () => {
 
   return (
     <LoginWithMagixdbRoot>
-      <IphoneXOrNewerlightdefa
-        alt=""
-        src="/iphone-x-or-newerlightdefault.svg"
-      />
+      
       <HomeIndicatorlight>
         <HomeIndicator />
       </HomeIndicatorlight>

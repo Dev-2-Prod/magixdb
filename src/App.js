@@ -55,7 +55,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/signuplogin-module-desktop":
+      case "/signuplogin":
         title = "";
         metaDescription = "";
         break;
@@ -83,13 +83,11 @@ function App() {
         lg ? <MagixDBFinalDesign /> : md ? <MagixDBTablet /> : <MagixDBMobile />
       } />
       <Route
-        path="/signuplogin-module-desktop"
+        path="/signuplogin"
         element={
           lg ? <SignupLoginModuleDesktop /> : md ? <MagixdbSignUpTabletScreen /> : <LogInWithMagixdb />
         }
       />
-
-
     </Routes>
   );
 }

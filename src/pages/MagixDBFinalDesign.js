@@ -1970,7 +1970,7 @@ const MagixDBFinalDesign = () => {
   }, []);
 
   const onItemLinkClick = useCallback(() => {
-    navigate("/signuplogin-module-desktop");
+    navigate("/signuplogin");
   }, [navigate]);
 
   const onItemLink1Click = useCallback(() => {
