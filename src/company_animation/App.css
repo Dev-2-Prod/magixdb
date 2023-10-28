@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   width: 10px;
-  height: 100%;
+  height: 50px;
   content: "";
   z-index: 2;
 }
@@ -54,7 +54,16 @@
   animation: 45s slide infinite linear;
 }
 
-.logos-slide img {
-  height: 100px;
-  margin: 0 40px;
+@media screen and (min-width: 0px) {
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logos-slide img {
+    height: 120px;
+    margin: 0 40px;
+  }
 }
