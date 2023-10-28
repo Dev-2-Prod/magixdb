@@ -1,6 +1,7 @@
 import { useCallback, useEffect } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import Carousel from '../company_animation/App'
 
 const QueryYourDatabase = styled.b`
   position: absolute;
@@ -2024,7 +2025,7 @@ const MagixDBFinalDesign = () => {
               <Button onClick={onButtonContainerClick}>
                 <TryNow>Try Now</TryNow>
               </Button>
-              <AnalyticsPlatformHeroImageIcon  source src="SQLite.mp4" type="video/mp4" muted={true} controls={true}
+              <AnalyticsPlatformHeroImageIcon source src="SQLite.mp4" type="video/mp4" muted={true} controls={true}
               >
                 <source src="SQLite.mp4" type="video/mp4" />
               </AnalyticsPlatformHeroImageIcon>
@@ -2334,10 +2335,8 @@ const MagixDBFinalDesign = () => {
             <DivelementorSection2>
               <DivelementorWidgetWrap8>
                 <DivelementorContainer1>
-                  <Logo1webpIcon alt="" src="/logo1webp@2x.png" />
-                  <Logo4webpIcon alt="" src="/logo4webp@2x.png" />
-                  <Logo3webpIcon alt="" src="/logo3webp@2x.png" />
-                  <Logo2webpIcon alt="" src="/logo2webp@2x.png" />
+                  <Carousel />
+                
                 </DivelementorContainer1>
                 <Section7>
                   <DivelementorContainer2>

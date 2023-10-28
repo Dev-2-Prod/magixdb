@@ -3,6 +3,7 @@ import Frame from "../components/Frame";
 import PortalPopup from "../components/PortalPopup";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import Carousel from "../company_animation/App";
 
 const QueryYourDatabase = styled.b`
   position: absolute;
@@ -2154,10 +2155,11 @@ const MagixDBMobile = () => {
         <DivelementorSection>
           <DivelementorWidgetWrap6>
             <DivelementorContainer>
-              <Logo4webpIcon alt="" src="/logo4webp@2x.png" />
+              <Carousel/>
+              {/* <Logo4webpIcon alt="" src="/logo4webp@2x.png" />
               <Logo3webpIcon alt="" src="/logo3webp@2x.png" />
               <Logo1webpIcon alt="" src="/logo1webp@2x.png" />
-              <Logo2webpIcon alt="" src="/logo2webp@2x.png" />
+              <Logo2webpIcon alt="" src="/logo2webp@2x.png" /> */}
             </DivelementorContainer>
             <Section4>
               <DivelementorContainer1>
