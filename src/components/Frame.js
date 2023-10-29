@@ -63,12 +63,44 @@ const GroupParentRoot = styled.div`
   font-family: var(--font-space-grotesk);
 `;
 
-const Frame = () => {
+const Frame = ({ change }) => {
   const navigate = useNavigate();
 
   const onLoginSignUpClick = useCallback(() => {
+    
     navigate("/signuplogin");
   }, [navigate]);
+
+  const onProductClick = () => {
+    console.log("clicked")
+    change();
+    const anchor = document.querySelector(
+      "#products"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
+
+  const onAboutUsClick = () => {
+    change();
+    const anchor = document.querySelector(
+      "#aboutus"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
+
+  const onPriceClick = () => {
+    change();
+    const anchor = document.querySelector(
+      "#pricing"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
 
   return (
     <GroupParentRoot>
@@ -80,9 +112,9 @@ const Frame = () => {
         />
       </MagixdbParent>
       <ProductParent>
-        <Product>Product</Product>
-        <Product>Pricing</Product>
-        <Product>About us</Product>
+        <Product onClick={onProductClick}>Product</Product>
+        <Product onClick={onPriceClick}>Pricing</Product>
+        <Product onClick={onAboutUsClick}>About us</Product>
         <LoginSignUp onClick={onLoginSignUpClick}>Login/ Sign up</LoginSignUp>
       </ProductParent>
     </GroupParentRoot>

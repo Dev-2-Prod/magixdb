@@ -1876,7 +1876,7 @@ const MagixDBMobile = () => {
 
   return (
     <>
-      <MagixdbVersion1FinalllllPhRoot>
+      <MagixdbVersion1FinalllllPhRoot id="products">
         <ArticleMain>
           <DivelementorWidgetWrap>
             <Heading1>
@@ -2259,7 +2259,7 @@ const MagixDBMobile = () => {
               </Div5>
             </DivelementorWidgetWrap8>
           </DivelementorSection2>
-          <Section5>
+          <Section5 id="pricing">
             <DivelementorWidgetWrap9>
               <Heading3EssentialParent>
                 <Heading31>Standard</Heading31>
@@ -2376,7 +2376,7 @@ const MagixDBMobile = () => {
             </DivelementorWidgetContainer1>
           </DivelementorWidgetWrap11>
         </Section6>
-        <Footer>
+        <Footer id="aboutus">
           <DivelementorSection3>
             <FrameParent>
               <DivelementorWidgetWrapParent>
@@ -2445,7 +2445,7 @@ const MagixDBMobile = () => {
           placement="Centered"
           onOutsideClick={closeFrame4}
         >
-          <Frame onClose={closeFrame4} />
+          <Frame onClose={closeFrame4} change={closeFrame4}/>
         </PortalPopup>
       )}
     </>
