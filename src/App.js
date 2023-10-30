@@ -6,9 +6,9 @@ import {
   useLocation,
 } from "react-router-dom";
 import MagixDBFinalDesign from "./pages/MagixDBFinalDesign";
-import SignupLoginModuleDesktop from "./pages/SignupLoginModuleDesktop";
+import LoginModuleDesktop from "./pages/LoginModuleDesktop";
 import MagixDBTablet from "./pages/MagixDBTablet";
-import MagixdbSignUpTabletScreen from "./pages/MagixdbSignUpTabletScreen";
+import MagixdbSignInTabletScreen from "./pages/MagixdbSignInTabletScreen";
 import MagixDBMobile from "./pages/MagixDBMobile";
 import LogInWithMagixdb from "./pages/LogInWithMagixdb";
 
@@ -55,7 +55,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/signuplogin":
+      case "/login":
         title = "";
         metaDescription = "";
         break;
@@ -83,9 +83,9 @@ function App() {
         lg ? <MagixDBFinalDesign /> : md ? <MagixDBTablet /> : <MagixDBMobile />
       } />
       <Route
-        path="/signuplogin"
+        path="/login"
         element={
-          lg ? <SignupLoginModuleDesktop /> : md ? <MagixdbSignUpTabletScreen /> : <LogInWithMagixdb />
+          lg ? <LoginModuleDesktop /> : md ? <MagixdbSignInTabletScreen /> : <LogInWithMagixdb />
         }
       />
     </Routes>

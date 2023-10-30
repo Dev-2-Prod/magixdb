@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useCallback } from "react";
 
 const Magixdb = styled.b`
   position: absolute;
@@ -338,7 +339,21 @@ const MagixdbSignUpTabletScreenRoot = styled.div`
   font-family: var(--font-space-grotesk);
 `;
 
-const MagixdbSignUpTabletScreen = () => {
+const MagixdbSignInTabletScreen = () => {
+  const onGmailLogin = useCallback(() => {
+    window.location.replace("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin");
+
+  }, )
+  const onOutlookLogin = useCallback(() => {
+
+    window.location.replace('https://login.live.com/');
+  }, )
+  const onLinkedinLogin = useCallback(() => {
+    window.location.replace('https://www.linkedin.com/login/');
+    // navigate("https://www.linkedin.com/login/");
+  }, )
+
+
   return (
     <MagixdbSignUpTabletScreenRoot>
       <TopNav>
@@ -386,7 +401,7 @@ const MagixdbSignUpTabletScreen = () => {
           <OrContinueWithItem />
         </OrContinueWith>
         <GroupContainer>
-          <LoginParent>
+          <LoginParent onClick={onGmailLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
@@ -395,16 +410,16 @@ const MagixdbSignUpTabletScreen = () => {
               <Google1Icon alt="" src="/google-1.svg" />
             </SignInWithGoogleParent>
           </LoginParent>
-          <LoginGroup>
+          <LoginGroup onClick={onOutlookLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
             <SignInWithFacebookParent>
-              <SignInWith1>Sign in with Facebook</SignInWith1>
-              <Facebook1Icon alt="" src="/facebook-1.svg" />
+              <SignInWith1>Sign in with Outlook</SignInWith1>
+              <Facebook1Icon alt="" src="/outlook.svg" />
             </SignInWithFacebookParent>
           </LoginGroup>
-          <LoginContainer>
+          <LoginContainer onClick={onLinkedinLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
@@ -419,4 +434,4 @@ const MagixdbSignUpTabletScreen = () => {
   );
 };
 
-export default MagixdbSignUpTabletScreen;
+export default MagixdbSignInTabletScreen;

@@ -68,7 +68,7 @@ const Frame = ({ change }) => {
 
   const onLoginSignUpClick = useCallback(() => {
     
-    navigate("/signuplogin");
+    navigate("/login");
   }, [navigate]);
 
   const onProductClick = () => {

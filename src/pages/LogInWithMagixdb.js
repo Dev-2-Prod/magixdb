@@ -237,6 +237,7 @@ const LoginItem = styled.div`
 const LoginParent = styled.div`
   position: absolute;
   top: 0px;
+  cursor:pointer
   left: 0px;
   width: 396px;
   height: 50px;
@@ -258,19 +259,20 @@ const Google1Icon = styled.img`
 const SignInWithGoogleParent = styled.div`
   position: absolute;
   top: 12px;
-  left: 111px;
+  left: 109px;
   width: 176px;
   height: 26px;
 `;
 const SignInWithFacebookParent = styled.div`
   position: absolute;
   top: 12px;
-  left: 101px;
+  left: 109px;
   width: 197px;
   height: 26px;
 `;
 const LoginGroup = styled.div`
   position: absolute;
+  cursor:pointer;
   top: 66px;
   left: 0px;
   width: 396px;
@@ -292,6 +294,7 @@ const SignInWithLinkedinParent = styled.div`
 const LoginContainer = styled.div`
   position: absolute;
   top: 132px;
+  cursor:pointer;
   left: 0px;
   width: 396px;
   height: 50px;
@@ -334,6 +337,19 @@ const LogInWithMagixdb = () => {
   const onArrowLeftOutlineIconClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  const onGmailLogin = useCallback(() => {
+    window.location.replace("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin");
+
+  }, [navigate])
+  const onOutlookLogin = useCallback(() => {
+    
+    window.location.replace('https://login.live.com/');
+  }, [navigate])
+  const onLinkedinLogin = useCallback(() => {
+    window.location.replace('https://www.linkedin.com/login/');
+    // navigate("https://www.linkedin.com/login/");
+  }, [navigate])
 
   return (
     <LoginWithMagixdbRoot>
@@ -390,7 +406,7 @@ const LogInWithMagixdb = () => {
           <LineDiv />
         </OrContinueWithParent>
         <GroupContainer>
-          <LoginParent>
+          <LoginParent onClick={onGmailLogin}>
             <LoginParent>
               <LoginItem />
             </LoginParent>
@@ -399,16 +415,16 @@ const LogInWithMagixdb = () => {
               <Google1Icon alt="" src="/google-1.svg" />
             </SignInWithGoogleParent>
           </LoginParent>
-          <LoginGroup>
+          <LoginGroup onClick={onOutlookLogin}>
             <LoginParent>
               <LoginItem />
             </LoginParent>
             <SignInWithFacebookParent>
-              <SignInWith>Sign in with Facebook</SignInWith>
-              <Google1Icon alt="" src="/facebook-1.svg" />
+              <SignInWith>Sign in with Outlook</SignInWith>
+              <Google1Icon alt="" src="/outlook.svg" />
             </SignInWithFacebookParent>
           </LoginGroup>
-          <LoginContainer>
+          <LoginContainer onClick={onLinkedinLogin}>
             <LoginParent>
               <LoginItem />
             </LoginParent>

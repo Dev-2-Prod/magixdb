@@ -225,6 +225,7 @@ const LoginChild = styled.div`
 const LoginParent = styled.div`
   position: absolute;
   top: 0px;
+  cursor : pointer;
   left: calc(50% - 264px);
   width: 528px;
   height: 50px;
@@ -243,7 +244,7 @@ const SignInWith = styled.div`
 const Google1Parent = styled.div`
   position: absolute;
   top: 12px;
-  left: 177px;
+  left: 174px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -253,7 +254,7 @@ const Google1Parent = styled.div`
 const Facebook1Parent = styled.div`
   position: absolute;
   top: 12px;
-  left: 167px;
+  left: 174px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -263,6 +264,7 @@ const Facebook1Parent = styled.div`
 const LoginGroup = styled.div`
   position: absolute;
   top: 66px;
+  cursor : pointer;
   left: calc(50% - 264px);
   width: 528px;
   height: 50px;
@@ -279,6 +281,7 @@ const Linkedin11Parent = styled.div`
 `;
 const LoginContainer = styled.div`
   position: absolute;
+  cursor : pointer;
   top: 132px;
   left: calc(50% - 264px);
   width: 528px;
@@ -316,7 +319,7 @@ const SignuploginModuleDesktopRoot = styled.div`
   font-family: var(--font-space-grotesk);
 `;
 
-const SignupLoginModuleDesktop = () => {
+const LoginModuleDesktop = () => {
   const navigate = useNavigate();
 
   const onFrameContainerClick = useCallback(() => {
@@ -330,6 +333,19 @@ const SignupLoginModuleDesktop = () => {
   const onLogo1RemovebgPreview1ImageClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  const onGmailLogin = useCallback(() => {
+    window.location.replace("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin");
+
+  }, [navigate])
+  const onOutlookLogin = useCallback(() => {
+    
+    window.location.replace('https://login.live.com/');
+  }, [navigate])
+  const onLinkedinLogin = useCallback(() => {
+    window.location.replace('https://www.linkedin.com/login/');
+    // navigate("https://www.linkedin.com/login/");
+  }, [navigate])
 
   return (
     <SignuploginModuleDesktopRoot>
@@ -377,7 +393,7 @@ const SignupLoginModuleDesktop = () => {
           <OrContinueWithItem />
         </OrContinueWith>
         <GroupParent>
-          <LoginParent>
+          <LoginParent onClick={onGmailLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
@@ -386,16 +402,16 @@ const SignupLoginModuleDesktop = () => {
               <SignInWith>Sign in with Google</SignInWith>
             </Google1Parent>
           </LoginParent>
-          <LoginGroup>
+          <LoginGroup onClick={onOutlookLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
             <Facebook1Parent>
-              <Google1Icon alt="" src="/facebook-1.svg" />
-              <SignInWith>Sign in with Facebook</SignInWith>
+              <Google1Icon alt="" src="/outlook.svg" />
+              <SignInWith>Sign in with Outlook</SignInWith>
             </Facebook1Parent>
           </LoginGroup>
-          <LoginContainer>
+          <LoginContainer onClick={onLinkedinLogin}>
             <LoginParent>
               <LoginChild />
             </LoginParent>
@@ -410,4 +426,4 @@ const SignupLoginModuleDesktop = () => {
   );
 };
 
-export default SignupLoginModuleDesktop;
+export default LoginModuleDesktop;

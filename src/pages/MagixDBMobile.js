@@ -1851,7 +1851,7 @@ const MagixDBMobile = () => {
   const navigate = useNavigate();
 
   const onButtonContainerClick = useCallback(() => {
-    navigate("/signuplogin");
+    navigate("/login");
   }, [navigate]);
 
   const onButtonContainer1Click = useCallback(() => {

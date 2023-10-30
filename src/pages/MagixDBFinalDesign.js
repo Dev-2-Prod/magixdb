@@ -1666,14 +1666,14 @@ const ItemLink5 = styled.div`
   font-weight: 500;
   display: flex;
   align-items: center;
-  width: 146px;
+  width: 246px;
   height: 23px;
 `;
 const List4 = styled.div`
   position: relative;
   width: 417.5px;
   height: 66px;
-  color: var(--color-midnightblue);
+  // color: var(--color-midnightblue);
 `;
 const DivelementorWidgetWrap12 = styled.div`
   position: absolute;
@@ -1971,7 +1971,7 @@ const MagixDBFinalDesign = () => {
   }, []);
 
   const onItemLinkClick = useCallback(() => {
-    navigate("/signuplogin");
+    navigate("/login");
   }, [navigate]);
 
   const onItemLink1Click = useCallback(() => {
@@ -2047,7 +2047,7 @@ const MagixDBFinalDesign = () => {
                 <P1>
                   <FireYourQueryContainer>
                     <QueryYourDatabaseContainer1>
-                      <WeProvideSupport>{`Fire your query in plain English instead of database query language. `}</WeProvideSupport>
+                      <WeProvideSupport>Fire your query in plain English instead of database <br/> query language.</WeProvideSupport>
                       <WeProvideSupport>
                         {" "}
                         Let our AI do all the magic
@@ -2471,13 +2471,13 @@ const MagixDBFinalDesign = () => {
                 <ItemLink onClick={onItemLink2Click}>Pricing</ItemLink>
                 <ItemLink onClick={onItemLink3Click}>About Us</ItemLink>
               </List3>
-              <Button5>
+              {/* <Button5>
                 <Spanbar />
                 <Spanbar1>
                   <Pseudo />
                 </Spanbar1>
                 <Spanbar2 />
-              </Button5>
+              </Button5> */}
             </DivuicoreNavMenu>
             <MagixdbParent>
               <Magixdb>MagixDB</Magixdb>
@@ -2504,8 +2504,8 @@ const MagixDBFinalDesign = () => {
                   </EnhanceThePower>
                 </P9>
                 <List4>
-                  <ItemLink4>contact@MagixDB.com</ItemLink4>
-                  <ItemLink5>+8801712958789</ItemLink5>
+                  <ItemLink4>Email Address :<br/>  contact@MagixDB.com<br/></ItemLink4>
+                  <ItemLink5><br/><br/>Contact Number: +8801712958789</ItemLink5>
                 </List4>
               </DivelementorWidgetWrap12>
               <DivelementorWidgetWrap13>
