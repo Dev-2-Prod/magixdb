@@ -683,7 +683,7 @@ const Div1Parent = styled.div`
   top: 93.3px;
   left: calc(50% - 86.2px);
   width: 173px;
-  height: 173px;
+  height: 200px;
   overflow-x: auto;
   font-size: var(--font-size-sm);
 `;

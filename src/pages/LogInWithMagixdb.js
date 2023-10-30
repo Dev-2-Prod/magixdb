@@ -110,7 +110,7 @@ const Email1 = styled.div`
 const InputLabelsmall = styled.div`
   position: absolute;
   top: 78.85%;
-  left: 68.43%;
+  left: 268px;
   line-height: 22px;
   color: var(--color-gray-100);
   text-align: right;
