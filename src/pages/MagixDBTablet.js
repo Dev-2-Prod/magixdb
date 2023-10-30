@@ -1576,7 +1576,7 @@ const List3 = styled.div`
   position: relative;
   width: 410px;
   height: 64.8px;
-  color: var(--color-midnightblue);
+  // color: var(--color-midnightblue);
 `;
 const DivelementorWidgetWrap12 = styled.div`
   position: absolute;
@@ -2393,8 +2393,8 @@ const MagixDBTablet = () => {
                       </EnhanceThePower>
                     </P9>
                     <List3>
-                      <ItemLink>contact@MagixDB.com</ItemLink>
-                      <ItemLink1>+8801712958789</ItemLink1>
+                    <ItemLink>Email Address :<br/>  contact@MagixDB.com<br/></ItemLink>
+                  <ItemLink1><br/><br/>Contact Number: +8801712958789</ItemLink1>
                     </List3>
                   </DivelementorWidgetWrap12>
                   <DivelementorWidgetWrap13>

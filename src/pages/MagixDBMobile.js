@@ -1617,7 +1617,7 @@ font-size:12px;
   left: 0px;
   width: 201px;
   height: 39px;
-  color: var(--color-midnightblue);
+  // color: var(--color-midnightblue);
 `;
 const DivelementorWidgetWrap12 = styled.div`
   position: absolute;
@@ -2395,8 +2395,8 @@ const MagixDBMobile = () => {
                     </EnhanceThePower>
                   </P9>
                   <List3>
-                    <ItemLink>contact@MagixDB.com</ItemLink>
-                    <ItemLink1>+8801712958789</ItemLink1>
+                  <ItemLink>Email Address :<br/>  contact@MagixDB.com<br/></ItemLink>
+                  <ItemLink1><br/>Contact Number: +8801712958789</ItemLink1>
                   </List3>
                 </DivelementorWidgetWrap12>
                 <DivelementorWidgetWrap13>
