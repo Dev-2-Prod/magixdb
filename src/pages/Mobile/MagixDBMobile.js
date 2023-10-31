@@ -2043,7 +2043,6 @@ const MagixDBMobile = () => {
 
                   </DivbdtEpAdvancedIconBox>
 
-                  <Div1Child alt="" src="/frame-1000004204.svg" />
                 </Div11>
                 <Div21>
                   <DivbdtEpAdvancedIconBox>
@@ -2070,7 +2069,6 @@ const MagixDBMobile = () => {
                       </P3>
                     </DivbdtEpAdvancedIconBoxC4>
                   </DivbdtEpAdvancedIconBox>
-                  <Div1Child alt="" src="/frame-10000042041.svg" />
                 </Div21>
                 <Div3>
                   <DivbdtEpAdvancedIconBox>
@@ -2097,7 +2095,6 @@ const MagixDBMobile = () => {
                       </P3>
                     </DivbdtEpAdvancedIconBoxC4>
                   </DivbdtEpAdvancedIconBox>
-                  <Div1Child alt="" src="/frame-10000042042.svg" />
                 </Div3>
                 <Div4>
                   <DivbdtEpAdvancedIconBox>
