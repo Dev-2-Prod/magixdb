@@ -153,7 +153,7 @@ const ForgotPasswordTablet768 = () => {
   const navigate = useNavigate();
 
   const onSubmitContainerClick = useCallback(() => {
-    navigate("/");
+    navigate("/newpassword");
   }, [navigate]);
 
   const onAlreadyHaveAnClick = useCallback(() => {
