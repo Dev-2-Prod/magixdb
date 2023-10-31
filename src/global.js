@@ -27,6 +27,8 @@ export default createGlobalStyle`
 --color-whitesmoke-100: #f5f8f3;
 --color-whitesmoke-200: #f2f2f2;
 --color-gray-100: #060606;
+--color-gray-200: #060606;
+
 --color-darkslategray-100: #2f2f2f;
 --color-darkslategray-200: #262b35;
 --color-midnightblue: #00156a;

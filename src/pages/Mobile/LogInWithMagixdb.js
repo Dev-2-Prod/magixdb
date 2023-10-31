@@ -6,7 +6,7 @@ const IphoneXOrNewerlightdefa = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 428px;
+  width: 391px;
   height: 47px;
   overflow: hidden;
 `;
@@ -14,8 +14,8 @@ const HomeIndicator = styled.div`
   position: absolute;
   bottom: 8px;
   left: calc(50% - 67px);
-  border-radius: 100px;
-  background-color: #000910;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-gray-100);
   width: 134px;
   height: 5px;
 `;
@@ -23,7 +23,7 @@ const HomeIndicatorlight = styled.div`
   position: absolute;
   top: 892px;
   left: 0px;
-  width: 428px;
+  width: 390px;
   height: 34px;
 `;
 const ArrowLeftoutlineIcon = styled.img`
@@ -46,278 +46,307 @@ const ArrowLeftoutlineParent = styled.div`
   position: absolute;
   top: 47px;
   left: 0px;
-  width: 428px;
+  width: 390px;
   height: 50px;
 `;
 const InputLabelmedium = styled.div`
   position: absolute;
+  width: 11.42%;
   top: 0%;
   left: 0%;
-  line-height: 26px;
+  line-height: 23.46px;
+  display: inline-block;
 `;
 const GroupChild = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  border-radius: var(--br-7xs);
+  border-radius: 5.41px;
   background-color: var(--color-white);
-  border: 1px solid var(--color-gainsboro);
+  border: 0.9px solid var(--color-gainsboro);
   box-sizing: border-box;
-  width: 396px;
-  height: 44px;
+  width: 357.4px;
+  height: 39.7px;
 `;
 const InputPlaceholdermediumon = styled.div`
   position: absolute;
-  top: 20.45%;
-  left: 3.03%;
-  line-height: 26px;
+  width: 32.46%;
+  top: 19.9%;
+  left: 2.38%;
+  line-height: 23.46px;
+  display: inline-block;
 `;
 const RectangleParent = styled.div`
   position: absolute;
-  top: 30px;
-  left: 0px;
-  width: 396px;
-  height: 44px;
+  top: 27.1px;
+  left: 1.5px;
+  width: 357.4px;
+  height: 39.7px;
   color: var(--color-silver);
 `;
 const Email = styled.div`
   position: absolute;
   height: 27.72%;
-  width: 100%;
+  width: 99.97%;
   top: 0%;
-  right: 0%;
+  right: 0.03%;
   bottom: 72.28%;
   left: 0%;
 `;
+const InputLabelmedium1 = styled.div`
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  line-height: 23.46px;
+`;
 const EyeoutlineIcon = styled.img`
   position: absolute;
-  top: 12px;
-  left: 364px;
-  width: 20px;
-  height: 20px;
+  top: 10.8px;
+  left: 328.5px;
+  width: 18px;
+  height: 18px;
   overflow: hidden;
+`;
+const EnterPassword = styled.div`
+  position: absolute;
+  top: 20.4%;
+  left: 2.35%;
+  line-height: 23.46px;
 `;
 const Email1 = styled.div`
   position: absolute;
-  height: 71.15%;
-  width: 100%;
+  height: 71.06%;
+  width: 99.97%;
   top: 0%;
-  right: 0%;
-  bottom: 28.85%;
+  right: 0.03%;
+  bottom: 28.94%;
   left: 0%;
-  font-size: var(--font-size-base);
+  font-size: 14.44px;
 `;
 const InputLabelsmall = styled.div`
   position: absolute;
-  top: 78.85%;
-  left: 268px;
-  line-height: 22px;
-  color: var(--color-gray-100);
+  width: 30.64%;
+  top: 78.4%;
+  left: 69.36%;
+  line-height: 19.85px;
+  color: var(--color-gray-200);
   text-align: right;
+  display: inline-block;
+  cursor: pointer;
 `;
 const CheckboxChild = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  border-radius: 2.5px;
+  border-radius: 2.26px;
   background-color: var(--color-white);
   border: 0.8px solid var(--color-gainsboro);
   box-sizing: border-box;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 `;
 const Checkbox = styled.div`
   position: absolute;
-  top: 1px;
+  top: 0.9px;
   left: 0px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 `;
 const InputLabelsmall1 = styled.div`
   position: absolute;
   top: 0%;
-  left: 22.58%;
-  line-height: 22px;
+  left: 19.82%;
+  line-height: 19.85px;
 `;
 const CheckboxParent = styled.div`
   position: absolute;
-  top: 82px;
-  left: 0px;
-  width: 124px;
-  height: 22px;
+  top: 74px;
+  left: 1.5px;
+  width: 108.5px;
+  height: 20px;
   color: var(--color-silver);
 `;
 const Password = styled.div`
   position: absolute;
-  height: 38.95%;
+  height: 39%;
   width: 100%;
-  top: 33.33%;
+  top: 33.32%;
   right: 0%;
-  bottom: 27.72%;
+  bottom: 27.68%;
   left: 0%;
-  font-size: var(--font-size-sm);
+  font-size: 12.63px;
 `;
 const LoginChild = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  border-radius: var(--br-7xs);
-  background-color: var(--color-gray-100);
-  width: 396px;
-  height: 50px;
+  border-radius: 5.41px;
+  background-color: var(--color-gray-200);
+  width: 357.4px;
+  height: 45.1px;
 `;
 const SignIn = styled.div`
   position: absolute;
-  top: 12px;
-  left: 173px;
-  line-height: 26px;
+  top: 10.8px;
+  left: 156.1px;
+  line-height: 23.46px;
 `;
 const Login = styled.div`
   position: absolute;
-  top: 217px;
-  left: 0px;
-  width: 396px;
-  height: 50px;
+  top: 195.8px;
+  left: 1.5px;
+  width: 357.4px;
+  height: 45.1px;
   text-align: center;
   color: var(--color-white);
 `;
 const EmailParent = styled.div`
   position: absolute;
-  height: 51.05%;
-  width: 99.75%;
+  height: 51.06%;
+  width: 99.78%;
   top: 0%;
-  right: 0.25%;
-  bottom: 48.95%;
+  right: 0.22%;
+  bottom: 48.94%;
   left: 0%;
 `;
 const OrContinueWith = styled.div`
   position: absolute;
   top: 0px;
-  left: 138px;
-  line-height: 26px;
+  left: 124.5px;
+  line-height: 23.46px;
 `;
 const GroupInner = styled.div`
   position: absolute;
-  top: 12.5px;
-  left: 266.5px;
+  top: 11.3px;
+  left: 240.5px;
   background-color: var(--color-silver);
-  border-top: 1px solid var(--color-silver);
+  border-top: 0.9px solid var(--color-silver);
   box-sizing: border-box;
-  width: 130px;
-  height: 1px;
+  width: 117.3px;
+  height: 0.9px;
 `;
 const LineDiv = styled.div`
   position: absolute;
-  top: 12.5px;
+  top: 11.3px;
   left: -0.5px;
   background-color: var(--color-silver);
-  border-top: 1px solid var(--color-silver);
+  border-top: 0.9px solid var(--color-silver);
   box-sizing: border-box;
-  width: 131px;
-  height: 1px;
+  width: 118.2px;
+  height: 0.9px;
 `;
 const OrContinueWithParent = styled.div`
   position: absolute;
-  top: 291px;
-  left: 0px;
-  width: 396px;
-  height: 26px;
+  top: 262.6px;
+  left: 1.5px;
+  width: 357.4px;
+  height: 24px;
   color: var(--color-silver);
 `;
 const LoginItem = styled.div`
   position: absolute;
   top: 0px;
   left: 0px;
-  border-radius: var(--br-7xs);
-  border: 1px solid var(--color-gray-100);
+  border-radius: 5.41px;
+  border: 0.9px solid var(--color-gray-200);
   box-sizing: border-box;
-  width: 396px;
-  height: 50px;
+  width: 357.4px;
+  height: 45.1px;
 `;
 const LoginParent = styled.div`
   position: absolute;
   top: 0px;
-  cursor:pointer
   left: 0px;
-  width: 396px;
-  height: 50px;
+  width: 357.4px;
+  height: 45.1px;
 `;
 const SignInWith = styled.div`
   position: absolute;
   top: 0px;
-  left: 30px;
-  line-height: 26px;
+  left: 27.1px;
+  line-height: 23.46px;
 `;
 const Google1Icon = styled.img`
   position: absolute;
-  top: 1px;
+  top: 0.9px;
   left: 0px;
-  width: 24px;
-  height: 24px;
+  width: 21.7px;
+  height: 21.7px;
   overflow: hidden;
 `;
 const SignInWithGoogleParent = styled.div`
   position: absolute;
-  top: 12px;
-  left: 109px;
-  width: 176px;
-  height: 26px;
+  top: 10.8px;
+  left: 100.2px;
+  width: 159.1px;
+  height: 24px;
 `;
 const SignInWithFacebookParent = styled.div`
   position: absolute;
-  top: 12px;
-  left: 109px;
-  width: 197px;
-  height: 26px;
+  top: 10.8px;
+  left: 91.2px;
+  width: 178.1px;
+  height: 24px;
 `;
 const LoginGroup = styled.div`
   position: absolute;
-  cursor:pointer;
-  top: 66px;
+  top: 59.6px;
   left: 0px;
-  width: 396px;
-  height: 50px;
+  width: 357.4px;
+  height: 45.1px;
 `;
 const SignInWith2 = styled.div`
   position: absolute;
   top: 0px;
-  left: 28px;
-  line-height: 26px;
+  left: 25.3px;
+  line-height: 23.46px;
 `;
 const SignInWithLinkedinParent = styled.div`
   position: absolute;
-  top: 12px;
-  left: 109px;
-  width: 183px;
-  height: 26px;
+  top: 10.8px;
+  left: 98.4px;
+  width: 165.3px;
+  height: 24px;
 `;
 const LoginContainer = styled.div`
   position: absolute;
-  top: 132px;
-  cursor:pointer;
+  top: 119.1px;
   left: 0px;
-  width: 396px;
-  height: 50px;
+  width: 357.4px;
+  height: 45.1px;
 `;
 const GroupContainer = styled.div`
   position: absolute;
-  top: 341px;
-  left: 1px;
-  width: 396px;
-  height: 182px;
+  top: 307.7px;
+  left: 2.4px;
+  width: 357.4px;
+  height: 164.3px;
   text-align: center;
-  color: var(--color-gray-100);
+  color: var(--color-gray-200);
 `;
 const GroupParent = styled.div`
   position: absolute;
-  height: 56.48%;
-  width: 92.76%;
+  height: 50.97%;
+  width: 92.26%;
   top: 13.07%;
-  right: 3.5%;
-  bottom: 30.45%;
-  left: 3.74%;
+  right: 3.9%;
+  bottom: 35.96%;
+  left: 3.85%;
   text-align: left;
+  font-size: 14.44px;
+`;
+const SignUp = styled.span`
+  text-decoration: underline;
+`;
+const DontHaveAnContainer = styled.div`
+  position: absolute;
+  top: 864px;
+  left: calc(50% - 119px);
   font-size: var(--font-size-base);
+  line-height: 19.85px;
+  color: var(--color-black);
+  text-align: right;
+  cursor: pointer;
 `;
 const LoginWithMagixdbRoot = styled.div`
   position: relative;
@@ -326,7 +355,7 @@ const LoginWithMagixdbRoot = styled.div`
   height: 926px;
   overflow: hidden;
   text-align: center;
-  font-size: 24px;
+  font-size: var(--font-size-5xl);
   color: var(--color-darkslategray-200);
   font-family: var(--font-inter);
 `;
@@ -338,22 +367,20 @@ const LogInWithMagixdb = () => {
     navigate("/");
   }, [navigate]);
 
-  const onGmailLogin = useCallback(() => {
-    window.location.replace("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin");
+  const onInputLabelSmallTextClick = useCallback(() => {
+    navigate("/forgotpassword");
+  }, [navigate]);
 
-  }, [navigate])
-  const onOutlookLogin = useCallback(() => {
-    
-    window.location.replace('https://login.live.com/');
-  }, [navigate])
-  const onLinkedinLogin = useCallback(() => {
-    window.location.replace('https://www.linkedin.com/login/');
-    // navigate("https://www.linkedin.com/login/");
-  }, [navigate])
+  const onDontHaveAnClick = useCallback(() => {
+    navigate("/signup");
+  }, [navigate]);
 
   return (
     <LoginWithMagixdbRoot>
-      
+      {/* <IphoneXOrNewerlightdefa
+        alt=""
+        src="/iphone-x-or-newerlightdefault.svg"
+      /> */}
       <HomeIndicatorlight>
         <HomeIndicator />
       </HomeIndicatorlight>
@@ -378,16 +405,16 @@ const LogInWithMagixdb = () => {
           </Email>
           <Password>
             <Email1>
-              <InputLabelmedium>Password</InputLabelmedium>
+              <InputLabelmedium1>Password</InputLabelmedium1>
               <RectangleParent>
                 <GroupChild />
                 <EyeoutlineIcon alt="" src="/eyeoutline.svg" />
-                <InputPlaceholdermediumon>
-                  Enter Password
-                </InputPlaceholdermediumon>
+                <EnterPassword>Enter Password</EnterPassword>
               </RectangleParent>
             </Email1>
-            <InputLabelsmall>Forgot Password?</InputLabelsmall>
+            <InputLabelsmall onClick={onInputLabelSmallTextClick}>
+              Forgot Password?
+            </InputLabelsmall>
             <CheckboxParent>
               <Checkbox>
                 <CheckboxChild />
@@ -406,7 +433,7 @@ const LogInWithMagixdb = () => {
           <LineDiv />
         </OrContinueWithParent>
         <GroupContainer>
-          <LoginParent onClick={onGmailLogin}>
+          <LoginParent>
             <LoginParent>
               <LoginItem />
             </LoginParent>
@@ -415,16 +442,16 @@ const LogInWithMagixdb = () => {
               <Google1Icon alt="" src="/google-1.svg" />
             </SignInWithGoogleParent>
           </LoginParent>
-          <LoginGroup onClick={onOutlookLogin}>
+          <LoginGroup>
             <LoginParent>
               <LoginItem />
             </LoginParent>
             <SignInWithFacebookParent>
-              <SignInWith>Sign in with Outlook</SignInWith>
-              <Google1Icon alt="" src="/outlook.svg" />
+              <SignInWith>Sign in with Facebook</SignInWith>
+              <Google1Icon alt="" src="/facebook-1.svg" />
             </SignInWithFacebookParent>
           </LoginGroup>
-          <LoginContainer onClick={onLinkedinLogin}>
+          <LoginContainer>
             <LoginParent>
               <LoginItem />
             </LoginParent>
@@ -435,6 +462,10 @@ const LogInWithMagixdb = () => {
           </LoginContainer>
         </GroupContainer>
       </GroupParent>
+      <DontHaveAnContainer onClick={onDontHaveAnClick}>
+        {`Don’t have an account? `}
+        <SignUp>Sign up</SignUp>
+      </DontHaveAnContainer>
     </LoginWithMagixdbRoot>
   );
 };

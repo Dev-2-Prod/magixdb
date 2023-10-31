@@ -1,9 +1,9 @@
 import { useState, useCallback } from "react";
-import Frame from "../components/Frame";
-import PortalPopup from "../components/PortalPopup";
+import Frame from "../../components/Frame";
+import PortalPopup from "../../components/PortalPopup";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import Carousel from "../company_animation/App";
+import Carousel from "../../company_animation/App";
 
 const QueryYourDatabase = styled.b`
   position: absolute;
@@ -1855,7 +1855,7 @@ const MagixDBMobile = () => {
   }, [navigate]);
 
   const onButtonContainer1Click = useCallback(() => {
-    navigate("/");
+    navigate("/login");
   }, [navigate]);
 
   const openFrame4 = useCallback(() => {

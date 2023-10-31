@@ -5,12 +5,17 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import MagixDBFinalDesign from "./pages/MagixDBFinalDesign";
-import LoginModuleDesktop from "./pages/LoginModuleDesktop";
-import MagixDBTablet from "./pages/MagixDBTablet";
-import MagixdbSignInTabletScreen from "./pages/MagixdbSignInTabletScreen";
-import MagixDBMobile from "./pages/MagixDBMobile";
-import LogInWithMagixdb from "./pages/LogInWithMagixdb";
+import MagixDBFinalDesign from "./pages/Laptop/MagixDBFinalDesign";
+import LoginModuleDesktop from "./pages/Laptop/LoginModuleDesktop";
+import MagixDBTablet from "./pages/Tabelt/MagixDBTablet";
+import MagixdbSignInTabletScreen from "./pages/Tabelt/MagixdbSignInTabletScreen";
+import MagixDBMobile from "./pages/Mobile/MagixDBMobile";
+import LogInWithMagixdb from "./pages/Mobile/LogInWithMagixdb";
+import SignupMobile from "./pages/Mobile/SignUpMobile";
+import ForgotPasswordMobile from "./pages/Mobile/ForgotPasswordMobile";
+import SetMyPasswordAndLoginDesk from "./pages/Mobile/SetMyPasswordAndLoginDesk";
+import SignupDesktop from "./pages/Laptop/SignUpDesktop";
+import ForgotPasswordDesktop from "./pages/Laptop/ForgotPasswordDekstop";
 
 function useMediaQuery(query) {
   const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
@@ -88,6 +93,27 @@ function App() {
           lg ? <LoginModuleDesktop /> : md ? <MagixdbSignInTabletScreen /> : <LogInWithMagixdb />
         }
       />
+      <Route
+        path="/signup"
+        element={
+          lg ? <SignupDesktop /> : md ? <MagixdbSignInTabletScreen /> : <SignupMobile />
+        }
+      />
+      <Route
+        path="/forgotpassword"
+        element={
+          lg ? <ForgotPasswordDesktop /> : md ? <MagixdbSignInTabletScreen /> : <ForgotPasswordMobile />
+        }
+      />
+      <Route
+        path="/newpassword"
+        element={
+          lg ? <SetMyPasswordAndLoginDesk /> : md ? <MagixdbSignInTabletScreen /> : <SetMyPasswordAndLoginDesk />
+        }
+      />
+
+
+
     </Routes>
   );
 }

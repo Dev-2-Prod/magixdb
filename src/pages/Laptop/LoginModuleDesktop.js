@@ -51,6 +51,7 @@ const PrimaryButton = styled.div`
 `;
 const Button = styled.div`
   position: relative;
+  cursor: pointer;
   width: 138.3px;
   height: 46.7px;
   text-align: left;
@@ -171,6 +172,7 @@ const Submit = styled.div`
 const InputLabelsmall = styled.div`
   position: absolute;
   top: 42.38%;
+  cursor : pointer;
   left: calc(50% + 111px);
   line-height: 29px;
   color: var(--color-gray-100);
@@ -347,6 +349,14 @@ const LoginModuleDesktop = () => {
     // navigate("https://www.linkedin.com/login/");
   }, [navigate])
 
+  const onSignUpClick = useCallback(() => {
+    navigate("/signup");
+  }, [navigate]);
+
+  const onForgotPasswordClick = useCallback(() => {
+    navigate("/forgotpassword");
+  }, [navigate]);
+
   return (
     <SignuploginModuleDesktopRoot>
       <TopNav>
@@ -360,7 +370,7 @@ const LoginModuleDesktop = () => {
         </MagixdbParent>
         <SignInParent>
           <SignIn>Sign in</SignIn>
-          <Button>
+          <Button onClick={onSignUpClick}>
             <ButtonChild />
             <PrimaryButton>Sign up for free</PrimaryButton>
           </Button>
@@ -386,7 +396,7 @@ const LoginModuleDesktop = () => {
           <SubmitChild />
           <LogIn>Log in</LogIn>
         </Submit>
-        <InputLabelsmall>Forgot Password?</InputLabelsmall>
+        <InputLabelsmall onClick={onForgotPasswordClick}>Forgot Password?</InputLabelsmall>
         <OrContinueWith>
           <OrContinueWith1>Or continue with</OrContinueWith1>
           <OrContinueWithChild />
