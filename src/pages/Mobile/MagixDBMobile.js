@@ -2124,7 +2124,6 @@ const MagixDBMobile = () => {
                       </P3>
                     </DivbdtEpAdvancedIconBoxC4>
                   </DivbdtEpAdvancedIconBox>
-                  <Div1Child alt="" src="/frame-10000042043.svg" />
                 </Div4>
               </Div1Parent>
             </DivelementorWidgetWrap5>
