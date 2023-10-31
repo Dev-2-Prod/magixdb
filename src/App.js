@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import MagixDBFinalDesign from "./pages/Laptop/MagixDBFinalDesign";
 import LoginModuleDesktop from "./pages/Laptop/LoginModuleDesktop";
-import MagixDBTablet from "./pages/Tabelt/MagixDBTablet";
-import MagixdbSignInTabletScreen from "./pages/Tabelt/MagixdbSignInTabletScreen";
+import MagixDBTablet from "./pages/Tablet/MagixDBTablet";
+import MagixdbSignInTabletScreen from "./pages/Tablet/MagixdbSignInTabletScreen";
 import MagixDBMobile from "./pages/Mobile/MagixDBMobile";
 import LogInWithMagixdb from "./pages/Mobile/LogInWithMagixdb";
 import SignupMobile from "./pages/Mobile/SignUpMobile";
@@ -16,6 +16,9 @@ import ForgotPasswordMobile from "./pages/Mobile/ForgotPasswordMobile";
 import SetMyPasswordAndLoginDesk from "./pages/Mobile/SetMyPasswordAndLoginDesk";
 import SignupDesktop from "./pages/Laptop/SignUpDesktop";
 import ForgotPasswordDesktop from "./pages/Laptop/ForgotPasswordDekstop";
+import SignupTablet768px from "./pages/Tablet/SignUpTbalet";
+import ForgotPasswordTablet768 from "./pages/Tablet/ForgotPasswordTablet";
+import SetMyPasswordAndLoginTabl from "./pages/Tablet/SetMyPasswordAndLoginDesk";
 
 function useMediaQuery(query) {
   const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
@@ -96,19 +99,19 @@ function App() {
       <Route
         path="/signup"
         element={
-          lg ? <SignupDesktop /> : md ? <MagixdbSignInTabletScreen /> : <SignupMobile />
+          lg ? <SignupDesktop /> : md ? <SignupTablet768px /> : <SignupMobile />
         }
       />
       <Route
         path="/forgotpassword"
         element={
-          lg ? <ForgotPasswordDesktop /> : md ? <MagixdbSignInTabletScreen /> : <ForgotPasswordMobile />
+          lg ? <ForgotPasswordDesktop /> : md ? <ForgotPasswordTablet768/> : <ForgotPasswordMobile />
         }
       />
       <Route
         path="/newpassword"
         element={
-          lg ? <SetMyPasswordAndLoginDesk /> : md ? <MagixdbSignInTabletScreen /> : <SetMyPasswordAndLoginDesk />
+          lg ? <SetMyPasswordAndLoginDesk /> : md ? <SetMyPasswordAndLoginTabl/> : <SetMyPasswordAndLoginDesk />
         }
       />
 
