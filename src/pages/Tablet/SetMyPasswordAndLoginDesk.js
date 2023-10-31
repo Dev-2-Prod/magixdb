@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 const Magixdb = styled.b`
   position: absolute;
   top: 23.3px;
@@ -72,7 +73,7 @@ const RectangleParent = styled.div`
   color: var(--color-darkgray);
 `;
 const Email = styled.div`
-  position: inline;
+  position: relative;
   width: 348px;
   margin-bottom:10px;
   height: 82px;
