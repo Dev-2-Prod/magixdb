@@ -345,7 +345,7 @@ const SignupDesktop = () => {
         <InputLabelmedium>Company size</InputLabelmedium>
         <RectangleGroup>
           <LanguageChild />
-          <IconParkOutlinedown alt="" src="/iconparkoutlinedown.svg" />
+          <IconParkOutlinedown alt="" src="/dropdown.svg" />
           <SelectCompanySizeWrapper>
             <SelectCompanySize>Select company size</SelectCompanySize>
           </SelectCompanySizeWrapper>

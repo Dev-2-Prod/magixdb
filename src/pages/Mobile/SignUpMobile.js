@@ -215,7 +215,7 @@ const SignupMobile = () => {
             <InputPlaceholdermediumon4>
               Select company size
             </InputPlaceholdermediumon4>
-            <IconParkOutlinedown alt="" src="/iconparkoutlinedown1.svg" />
+            <IconParkOutlinedown alt="" src="/dropdown.svg" />
           </RectangleParent>
         </InputLabelmediumParent>
         <RectangleParent2>

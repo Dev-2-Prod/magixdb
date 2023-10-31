@@ -77,6 +77,7 @@ const Email = styled.div`
   position: relative;
   width: 528px;
   height: 82px;
+  margin-bottom : 10px;
   text-align: left;
 `;
 const SubmitChild = styled.div`
@@ -98,6 +99,7 @@ const Submit = styled.div`
   position: relative;
   width: 528px;
   height: 50px;
+  margin-top:10px;
   font-size: var(--font-size-base);
   color: var(--color-white);
 `;
@@ -128,7 +130,7 @@ const SetMyPasswordAndLoginDeskRoot = styled.div`
   font-family: var(--font-space-grotesk);
 `;
 
-const SetMyPasswordAndLoginDesk = () => {
+const SetMyPasswordAndHelpDesk = () => {
   const navigate = useNavigate();
 
   const onFrameContainerClick = useCallback(() => {
@@ -157,6 +159,7 @@ const SetMyPasswordAndLoginDesk = () => {
             </InputPlaceholdermediumon>
           </RectangleParent>
         </Email>
+        
         <Email>
           <InputLabelmedium>Confirm new password</InputLabelmedium>
           <RectangleParent>
@@ -175,4 +178,4 @@ const SetMyPasswordAndLoginDesk = () => {
   );
 };
 
-export default SetMyPasswordAndLoginDesk;
+export default SetMyPasswordAndHelpDesk;

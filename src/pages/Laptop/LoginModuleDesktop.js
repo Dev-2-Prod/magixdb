@@ -40,16 +40,34 @@ const ButtonChild = styled.div`
   left: calc(50% - 69.15px);
   border-radius: 5.61px;
   background-color: var(--color-gray-100);
-  width: 138.3px;
+  width: 78.3px;
   height: 46.7px;
 `;
 const PrimaryButton = styled.div`
+
+  color: var(--color-white);
   position: absolute;
   top: calc(50% - 12.35px);
   left: calc(50% - 58.75px);
   line-height: 24.29px;
 `;
+const PrimaryButton2 = styled.div`
+
+  color: var(--color-black);
+  position: absolute;
+  top: calc(50% - 12.35px);
+  // left: calc(50% - 58.75px);
+  line-height: 24.29px;
+`;
 const Button = styled.div`
+  position: relative;
+  cursor: pointer;
+  width: 68.3px;
+  height: 46.7px;
+  text-align: left;
+  color: var(--color-white);
+`;
+const Button1 = styled.div`
   position: relative;
   cursor: pointer;
   width: 138.3px;
@@ -60,7 +78,7 @@ const Button = styled.div`
 const SignInParent = styled.div`
   position: absolute;
   top: 22px;
-  left: 622.6px;
+  left: calc(50% + 203.15px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -369,11 +387,17 @@ const LoginModuleDesktop = () => {
           />
         </MagixdbParent>
         <SignInParent>
-          <SignIn>Sign in</SignIn>
-          <Button onClick={onSignUpClick}>
+          {/* <SignIn>Sign in</SignIn> */}
+          <Button >
             <ButtonChild />
-            <PrimaryButton>Sign up for free</PrimaryButton>
+            <PrimaryButton>Sign in</PrimaryButton>
           </Button>
+          <Button1 onClick={onSignUpClick}>
+          <PrimaryButton2>Sign up for free</PrimaryButton2>
+          </Button1>
+          {/* <Button onClick={onSignUpClick}>
+            <ButtonChild />
+          </Button> */}
         </SignInParent>
       </TopNav>
       <SignInToDhiwiseParent>

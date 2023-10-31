@@ -19,6 +19,7 @@ import ForgotPasswordDesktop from "./pages/Laptop/ForgotPasswordDekstop";
 import SignupTablet768px from "./pages/Tablet/SignUpTbalet";
 import ForgotPasswordTablet768 from "./pages/Tablet/ForgotPasswordTablet";
 import SetMyPasswordAndLoginTabl from "./pages/Tablet/SetMyPasswordAndLoginDesk";
+import SetMyPasswordAndHelpDesk from "./pages/Laptop/SetMyPasswordAndHelpDesk";
 
 function useMediaQuery(query) {
   const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
@@ -111,7 +112,7 @@ function App() {
       <Route
         path="/newpassword"
         element={
-          lg ? <SetMyPasswordAndLoginDesk /> : md ? <SetMyPasswordAndLoginTabl/> : <SetMyPasswordAndLoginDesk />
+          lg ? <SetMyPasswordAndHelpDesk /> : md ? <SetMyPasswordAndLoginTabl/> : <SetMyPasswordAndLoginDesk />
         }
       />
 

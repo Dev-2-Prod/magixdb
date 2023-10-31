@@ -85,6 +85,7 @@ const RectangleParent = styled.div`
   color: var(--color-silver);
 `;
 const Email = styled.div`
+margin-top:15px;
   position: absolute;
   height: 27.72%;
   width: 99.97%;
@@ -125,6 +126,7 @@ const Email1 = styled.div`
 `;
 const InputLabelsmall = styled.div`
   position: absolute;
+  margin-top:30px;
   width: 30.64%;
   top: 78.4%;
   left: 69.36%;
@@ -168,6 +170,7 @@ const CheckboxParent = styled.div`
 `;
 const Password = styled.div`
   position: absolute;
+  margin-top:28px;
   height: 39%;
   width: 100%;
   top: 33.32%;
@@ -340,7 +343,7 @@ const SignUp = styled.span`
 `;
 const DontHaveAnContainer = styled.div`
   position: absolute;
-  top: 864px;
+  top: 624px;
   left: calc(50% - 119px);
   font-size: var(--font-size-base);
   line-height: 19.85px;
@@ -352,8 +355,8 @@ const LoginWithMagixdbRoot = styled.div`
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 926px;
-  overflow: hidden;
+  height: 100vh;
+  overflow: auto;
   text-align: center;
   font-size: var(--font-size-5xl);
   color: var(--color-darkslategray-200);

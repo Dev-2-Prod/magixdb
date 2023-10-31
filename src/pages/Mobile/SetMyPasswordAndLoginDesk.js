@@ -78,6 +78,7 @@ const RectangleParent = styled.div`
 const Email = styled.div`
   position: relative;
   width: 348px;
+  margin-bottom : 10px;
   height: 82px;
   text-align: left;
 `;
